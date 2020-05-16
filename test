@@ -1,0 +1,973 @@
+<?xml version="1.0"?>
+<!--
+
+To update or change a mod link:
+1. Go to https://drive.google.com/drive/folders/0B_b9PFqx_PR9Um9MeFZMV21oWGs?usp=sharing
+2. Select the mod you want to get the link for and open the folder.
+3. Open the .zip file of the mod.
+4. Select "Get sharable link"
+5. Copy the link (example from lightbringer: https://drive.google.com/file/d/1JGfVZ9UpkkI8r6DdOm9-dFEcSkL6Ouf9/view?usp=sharing )
+6. Copy the ID from the link into the mod's ID field: (example: 1JGfVZ9UpkkI8r6DdOm9-dFEcSkL6Ouf9 goes into <![CDATA[https://drive.google.com/uc?export=download&id=1JGfVZ9UpkkI8r6DdOm9-dFEcSkL6Ouf9]]>
+7. done!
+nb. To figure out where the default install path should go, open the zip and match it to that level of the hollow knight folder.
+Hopefully in the future, mods will provide a modfiles.xml file that describes where things should go.
+modfiles.xml is a dumb idea. Properly zipped zip files are better. Keep it simple, stupid.
+
+Mods that write to assembly-csharp are not compatible
+-->
+<ModLinks xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DriveLink>https://drive.google.com/drive/folders/0B_b9PFqx_PR9Um9MeFZMV21oWGs?usp=sharing</DriveLink>
+	<Installer>
+	    <Link><![CDATA[https://radiance.host/mods/ModInstaller.exe]]></Link>
+	    <SHA1>7C87306373B8A201608EE9300DBE650F411D7FF6</SHA1>
+	    <AULink><![CDATA[https://github.com/Ayugradow/ModInstaller-Auto-Updater/releases/download/v1.0/ModInstallerAutoUpdater.exe]]></AULink>
+	</Installer>
+	<ModList>
+		<ModLink>
+			<Name>Modding API Windows</Name><!-- WRITES TO ASSEMBLY-CSHARP -->
+			<Files>
+				<File>
+					<Name>Assembly-CSharp.dll</Name>
+					<SHA1>81618D26F5633F51E369D736D7790E78B1FC64C6</SHA1>
+					<Patch>1.4.3.2</Patch>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1qgm-LS3mBtbaqd-BxxRjqmE1eEmXG8rH]]></Link>
+			<GOGLink><![CDATA[https://drive.google.com/uc?export=download&id=1qgm-LS3mBtbaqd-BxxRjqmE1eEmXG8rH]]></GOGLink>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>true</WritesOverAssembly>
+			<Dependencies />
+		</ModLink>
+		<ModLink>
+			<Name>Modding API Linux</Name><!-- WRITES TO ASSEMBLY-CSHARP -->
+			<Files>
+				<File>
+					<Name>Assembly-CSharp.dll</Name>
+					<SHA1>FFF277F647BFD481EB09B215FA26134E72041A04</SHA1>
+					<Patch>1.4.3.2</Patch>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1f4NZOpNDgeREkssjmOHUyAVj_1INk4ga]]></Link>
+			<GOGLink><![CDATA[https://drive.google.com/uc?export=download&id=1f4NZOpNDgeREkssjmOHUyAVj_1INk4ga]]></GOGLink>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>true</WritesOverAssembly>
+			<Dependencies />
+		</ModLink>
+		<ModLink>
+			<Name>ModCommon</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ModCommon.dll</Name>
+					<SHA1>b5936accdafedf73577f4eb7b44dcc0be83dc890</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1XB38hwlVRhYxbZj-41sqTCg684Ig1vAL]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>ModConsole</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ModConsole.dll</Name>
+					<SHA1>AB01208CA0707D6BCD3AC2A4F53C1338D3A4253B</SHA1>
+				</File>
+				<File>
+					<Name>Mono.CSharp.dll</Name>
+					<SHA1>F75E0DFBFEA8971CA81CA8EC1F0D4A18BBFAF82B</SHA1>
+				</File>
+				<File>
+					<Name>Mono.Security.dll</Name>
+					<SHA1>8DA34D415672223140F3A3DD21AF327892C2B378</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1GQzyLQmYMXsPhzuxKKjHEjOXZVFTLU1J]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Hell Mod</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>HellMod.dll</Name>
+					<SHA1>12a198bc13c388911cd22c874498ccfe63e40f65</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1_VkTWanS5Tx8H50RAc2S3zEX_QhADJuV]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>HollowPoint (Beta)</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>HollowPoint.dll</Name>
+					<SHA1>03241f88d21c40551bb72e0c52fdcebea9f9b75a</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1Kvi6xjES0imKALCuHWF3O98Jl3496dAl]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Bindings</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Bindings.dll</Name>
+					<SHA1>029C3F3F7C9FE5EF7CBF44105A6E95A8613FC2B3</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1yxytX8Ulq_ZQedYmR7uBV9vOupzj5DW2]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Pale Prince</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Pale_Prince.dll</Name>
+					<SHA1>4dd343d598878235bd149b495c55c6a6a7ef8caa</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=10haKYAnDuSGsAqOZkTA-5GiFgjsgt9v0]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Omnēs Deōrum</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>OmnesDeorum.dll</Name>
+					<SHA1>744645637C6A4531AA140C9333759476A8D47DD9</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1JvUSKBAcxbujeR1EA951wt6R7jYsXDWY]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Mantis Gods</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Mantis Gods.dll</Name>
+					<SHA1>0618e8e9fba19d22c8c6e4d3498e82f534b6158f</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1mZgGfNDpR4QyTfQ0qPP9vkMw8900iTPM]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Sanic</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Sanic.dll</Name>
+					<SHA1>7613615a22785fdd22178dfe8f41e31cae423bdd</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1tQ-RULOsUR3wPXSCPX3ldJQe7YHlfEvk]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>RNG</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>why.dll</Name>
+					<SHA1>2e9ccf8c3f40a3f8a28c48fcedcc083f0acaf1b8</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1Su68ndGG-YLVTJuCVwaMdI9B_nHkK6c5]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>CharmOverhaul</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>BetterCharms.dll</Name>
+					<SHA1>5837a56bdc8f5ed377a78340165af198d7b915f4</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1o875EXE0L5-X0BAx2BjqgyG0qWsX6shY]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Chaos Mode</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ChaosMode.dll</Name>
+					<SHA1>bf15663926c8c72dbd458c205baa7ea5af1a00e7</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1xCoTQFKHRIELNS5xH4ouMcfF-ai50xha]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>RandoMapMod</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>RandoMapMod.dll</Name>
+					<SHA1>8ACEB41272A58532F950B010647E77A7280DD5C1</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=downloads&id=1AScQJdx0cU0cnlWnR2dpWfrB50XVNUZk]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Lightbringer</Name><!-- API MOD -->
+				<Files>
+					<File>
+						<Name>Lightbringer.dll</Name>
+						<SHA1>f82d2bf1ad4cef48201d739c43afbd1771a6d2cb</SHA1>
+					</File>
+				</Files>
+				<Link><![CDATA[https://drive.google.com/uc?export=download&id=1xAiQnjQ9p_qqTwZvf_vHN6l1F6TdQ3kL]]></Link>
+				<DefaultInstallPath>/</DefaultInstallPath>
+				<WritesOverAssembly>false</WritesOverAssembly>
+				<Dependencies>
+					<string>Modding API</string>
+					<string>ModCommon</string>
+				</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>MoreSaves</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>MoreSaves.dll</Name>
+					<SHA1>06149f8423a6708e35ceb44b6fc0379cb6153ad2</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1yr832lq_jSCvX8Ve5qVIWlIl4kVVAmPD]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>The Pain of the Path</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ThePainOfThePath.dll</Name>
+					<SHA1>2dd7893e3cdaec4bb7c1129a1bf6ceb6734f1383</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1lvvNutNW917oRVHRCNbnxrQdUneccR8o]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>QoL</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>QoL.dll</Name>
+					<SHA1>D090BD861F3591662FD7DE77DBAE1AE3009DC27B</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1f1u6gfPO9HTKZXidcisfuZtwMSinafvW]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Blackmoth</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Blackmoth.dll</Name>
+					<SHA1>74A32624CB3437460D2635BF6C220D9E5C4B441E</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=11u4QTDUeq_09t8DjXrMY0qIyKaWGz7Gz]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Debug Mod</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>DebugMod.dll</Name>
+					<SHA1>3BE1C171DAF7B17C9437B9BE54E0324848AF4B39</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=0BzihlMHqh5UpWXhoS2hyZ2JUMEU]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+        <ModLink>
+			<Name>SeanprCore</Name><!-- NOT A MOD BUT WHATEVER -->
+			<Files>
+				<File>
+					<Name>SeanprCore.dll</Name>
+					<SHA1>ba09f0088a5573da442281ae1a18ce9c5baff191</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1Ez1JKQiHK7RrLJ7y4YL_z8_Rwf2jMvCI]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Randomizer 2 (Old)</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>RandomizerMod2.0.dll</Name>
+					<SHA1>c86cb9e1ec01ea6e24d72a68fe903305a8b59110</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1KYygwL2kYyCoASt-TMIpiiNUN6tVO3rG]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>SeanprCore</string>
+			</Dependencies>
+		</ModLink>
+        <ModLink>
+			<Name>Custom Knight</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>CustomKnight.dll</Name>
+					<SHA1>74c0f0f8aec5e6e52bf5e6900036c73f97a16e79</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://github.com/jngo102/HollowKnight.CustomKnight/releases/download/1.2.1/CustomKnight.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+        <ModLink>
+			<Name>Show Hitboxes</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ShowHitboxes.dll</Name>
+					<SHA1>e9b4d33168af737ac3568047f2c1eb42b1adabac</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1McNr6AWvJMWzcewCf4DCmyMZfyzmNe7b]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Enemy Randomizer</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>EnemyRandomizer.dll</Name>
+					<SHA1>160a8b33f3906a7d8cdad9bebf58df9adc9fc98c</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1LG4gnSiSPZWbLM-6e5DM0ACC0zf_jZX9]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Bonfire Mod</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>BonfireMod.dll</Name>
+					<SHA1>67F52DDD1061392CE97C3F5BA1E435A03C3999F2</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1YsthSD5-k8vVtK4orQBz_mZIF4_w-I4P]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Glorious Combos</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>combomod.dll</Name>
+					<SHA1>33063dc026cb0afee17d4001e5d5b36484e9083a</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/gcombos.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Infinite Grimm</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>infinitegrimm.dll</Name>
+					<SHA1>453268a062a91012ab66ec1f36ff53e4b8851dbe</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/infinitegrimm.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Grimmchild Upgrades</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>grimmchildupgrades.dll</Name>
+					<SHA1>29acf7e9497ebc670d9eb071a2198aa887e1e80e</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/grimmchildupgrades.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+			<Optional>
+				<string>Infinite Grimm</string>
+			</Optional>
+		</ModLink>
+		<ModLink>
+			<Name>Unofficial Hollow Knight Patch</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>UHKP.dll</Name>
+					<SHA1>e613567027d4c0e74544865968d014bbff6e5baa</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/UHKP.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Redwing</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>redwing.dll</Name>
+					<SHA1>9da091bb6a995ac99c13ceb92cdde7699ce6ce9e</SHA1>
+				</File>
+				<File>
+					<Name>AAngleRedwingIntegration.dll</Name>
+					<SHA1>6aef3d8aca455fb08a2ca4cdbd6488e0e68f1559</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/redwing.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+				<string>Redwing Assets</string>
+			</Dependencies>
+			<Optional>
+				<string>Blackmoth</string>
+			</Optional>
+		</ModLink>
+		<ModLink>
+			<Name>Redwing Assets</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>dummy.dll</Name>
+					<SHA1>65150d277adc4d6d3e01ef5c4d9ad5620a1a184f</SHA1>
+				</File>
+				<File>
+				    <Name>redwing\ending3.webm</Name>
+				    <SHA1>3d3eb119faab3039fde72dfded3e05e380afc3fb</SHA1>
+				</File>
+				<File>
+				    <Name>redwing\ending2.webm</Name>
+				    <SHA1>bb23b47fa016b86858e7e710349882266f14117d</SHA1>
+				</File>
+				<File>
+				    <Name>redwing\ending1.webm</Name>
+				    <SHA1>09559c228d4efabd4b690645593e9a1df9d855ca</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/redwingAssets.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>'Art' Mods</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>infinitemyla.dll</Name>
+					<SHA1>bb280b38d75f5366586a944ba924c84667e6edac</SHA1>
+				</File>
+				<File>
+				    <Name>halfmod.assets</Name>
+				    <SHA1>5a629d929df2bdf022f41ff7623613492da0f2ba</SHA1>
+				</File>
+				<File>
+				    <Name>halfmod.dll</Name>
+				    <SHA1>e30deb3f322ec8a883543ab6482c08e250ce0e19</SHA1>
+				</File>
+				<File>
+				    <Name>halfmod.webm</Name>
+				    <SHA1>81281b9e8573605effc19843f373fef90aaa37c7</SHA1>
+				</File>
+				<File>
+				    <Name>nuke.webm</Name>
+				    <SHA1>0c298f9f0f3bda1e5db4f8c4e6d33b701ed77c9b</SHA1>
+				</File>
+				<File>
+				    <Name>shitmothst.dll</Name>
+				    <SHA1>71aa0223e7c63ac0fdeccc18e2530fe468115cb4</SHA1>
+				</File>
+				<File>
+				    <Name>atomicradiance.dll</Name>
+				    <SHA1>0c31659935ecde6c1bfe6801087b6e28d1a4f71a</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://radiance.host/mods/artmods.zip]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Infinite Notches</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>InfiniteNotches.dll</Name>
+					<SHA1>4CCA02A9A58BDC4A2DB6C9C856DEFA0866201FB7</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1oq0x6XGbo1rqPPAgGubfeupwTU3N1HXr]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Player Data Tracker</Name><!-- API MOD CONTAINS EXTRA DLLS.... ADD SUPPORT FOR THIS -->
+			<Files>
+				<File>
+					<Name>PlayerDataDump.dll</Name>
+					<SHA1>A1ABC64E635D9F1D4E3975C31D1C6D110B491620</SHA1>
+				</File>
+				<File>
+					<Name>websocket-sharp.dll</Name>
+					<SHA1>998550d8bd5d050a8a45679324bce9cbbfff0b6c</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1wWho_N2tdgnds46N0bdaYiXJpYj_P98Z]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Charm Notch Mod</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>CharmNotchMod.dll</Name>
+					<SHA1>0731a7f278acd73d71cead033911a0a298b5c8a7</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=0BzihlMHqh5UpUVQ5ZGlEdlcxOXM]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>EnemyHPBar</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>EnemyHPBar.dll</Name>
+					<SHA1>F7C58BA46137AEBC537DC5B9A2CCACEAB0DA44E1</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1BeFOhGulOCOzbuSdHgOUpnKZ8oRFvxeJ]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Fragile Strength for Nail Arts</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>FragileStrengthForNailArts.dll</Name>
+					<SHA1>3d1da1ac278e6fede54c06c88417c6271c358f6d</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1ccDSG_ZSDaGZKgn2kmPBgtAiDdw2jqQJ]]></Link>
+			<DefaultInstallPath>/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Ultimatum Radiance</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Ultimatum Radiance.dll</Name>
+					<SHA1>8f05c5b7143ce061b33451c00ef91e03dea96580</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1BpR6Yha3CU36c1Lz0XAjYlONj2INjPvX]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Darkness</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Darkness.dll</Name>
+					<SHA1>6CC156625918BDF908CE6F4B8D433FA24AE6445A</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1t_ppIAOEwYd_SPMTPtPDSTQq8b0E8gpo]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Daughter of Hallownest</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>DoH.dll</Name>
+					<SHA1>0ead53074e3397ac2962c06838f9431b03b7c07a</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1Ek4NqXPWIE9XRWd0bJjqA1ohX4GEkcvb]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+        <ModLink>
+			<Name>Spent Geo Tracker</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>GeoTracker.dll</Name>
+					<SHA1>117baa8483e6d006aebec6cf9a99218e60629fcc</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1hBS81YDHy4PIYH7pxidPBd9IchmpF4NG]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Benchwarp</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Benchwarp.dll</Name>
+					<SHA1>963C663631D44EFBA4C2908CE2BCC9DDFF6DAD5C</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1adKpIMsyQMsE_5SGZu16X6rbi6btfXez]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Pale Champion</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>PaleChampion.dll</Name>
+					<SHA1>9C720D739898C9EB0F98434C7E1794220F9FD9D3</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://github.com/SalehAce1/HKFiles/blob/master/%5BAPI%5D%20Pale%20Champion%20(by%20Saleh).zip?raw=true]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Elderbug God</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>ElderbugGod.dll</Name>
+					<SHA1>af43fead30e9ee5cbae9b0e7ad28b3a3fed3e6b1</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=100DQ7o7eCTrBL0Yf3wytn8qI07CskAHi]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Randomizer 3 (Item or Room)</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>RandomizerMod3.0.dll</Name>
+					<SHA1>7FBFF6BA445FB9534BADB2DF5A3F18072446A2D4</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1q5HtsxfVydCueDj5-mactbU_ZyHECD-j]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>SeanprCore</string>
+				<string>Benchwarp</string>
+				<string>QoL</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Poorly Translated</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>TranslationMod.dll</Name>
+					<SHA1>ABEFE12B66226C3C9A7A80A1C16917EE3BCA51A9</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=11xFWrOoVuw03UNvmKA_H_gLjUP3DTuDC]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Crystalblobbles</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Crystalblobbles.dll</Name>
+					<SHA1>c833b14317928fc6788e66cbc968dd9227df4a32</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1GeyXchgJJgUIWLQxioOu7re2dHFt19L4]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Traitor God</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Traitor God.dll</Name>
+					<SHA1>190b3d418ae6acad17bc526035d13464e6694a00</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1_u6XJ-71n_PIL9m1taehsWcUqwJ0Ey0V]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Tribe of Battle</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Tribe_of_Battle.dll</Name>
+					<SHA1>22421170af8dbffdb3a8baff5edff6fafa205f86</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1lg0A4pstHdlHdbdU511Umg5uYuvG8Pd1]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>LoadNormalizer</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>LoadNormalizer.dll</Name>
+					<SHA1>DE9A501A5DF00A4E5922A8B4B804B0AB6146F19B</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=13v9CkQlEVKaaAPjY3ZO9VppgyeM1CVVs]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Path of Pure Vessel</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>PVPoP.dll</Name>
+					<SHA1>EE891F879244798DA657EF90FB10B016D53A9D8C</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1psfwT5_dH9XiU_8g7b_rkkdI6YhGfwnS]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Royal Dreamer</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>RoyalDreamer.dll</Name>
+					<SHA1>C6D7BEF8B1580FC962F8C80DDB13482BA9168C73</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1vxar_-vYLQHbixvfN9PLiZmweKHBpgS9]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Dream Shield Coop</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Dshieldcoop.dll</Name>
+					<SHA1>407729D8C45AE514382804A73B645DAFE4115824</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1F17aQrAlMSLS-_HXjoDp8qHXRU4dH3Zm]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Transtrans</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>Transtrans.dll</Name>
+					<SHA1>E05A407BAB3F4231B78D0E307E720BF86C02347D</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1MoarOHW6daSehsEccXOT19jSub7dX0k8]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+		<ModLink>
+			<Name>Floor Lava</Name><!-- API MOD -->
+			<Files>
+				<File>
+					<Name>FloorLava.dll</Name>
+					<SHA1>123B04102ED23ADF7EA482270682D4B8E1CC4CD1</SHA1>
+				</File>
+			</Files>
+			<Link><![CDATA[https://drive.google.com/uc?export=download&id=1gAo7SihdBEz5-4-GpkPQ38KpvUY7_lcz]]></Link>
+			<DefaultInstallPath>/hollow_knight_Data/Managed/Mods/</DefaultInstallPath>
+			<WritesOverAssembly>false</WritesOverAssembly>
+			<Dependencies>
+				<string>Modding API</string>
+				<string>ModCommon</string>
+			</Dependencies>
+		</ModLink>
+	</ModList>
+</ModLinks>
